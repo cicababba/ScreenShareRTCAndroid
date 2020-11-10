@@ -159,7 +159,7 @@ public class RtcActivity extends Activity implements WebRtcClient.RtcListener {
         ClipboardManager clip = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
         ClipData data = ClipData.newPlainText("callId", callId);
         clip.setPrimaryClip(data);
-        Toast.makeText(this, "ID: " + callId + " copied to the clipboard", Toast.LENGTH_LONG).show();
+       // Toast.makeText(this, "ID: " + callId + " copied to the clipboard", Toast.LENGTH_LONG).show();
         mWebRtcClient.start(STREAM_NAME_PREFIX);
     }
 
